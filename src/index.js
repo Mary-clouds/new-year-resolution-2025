@@ -21,3 +21,12 @@ function changeQuote(direction){
     carouselElement.style.transform =  `translateX(-${carouselIndex * 100}%)`; 
 
 }
+
+function shareYourGoal(event){
+   
+    let promptMessage = event.target.value;
+    alert(f`Thank you for sharing your goal ${promptMessage} with me. We got this💪!`);
+}
+
+let goalSharingElement = document.querySelector("#your-goal");
+goalSharingElement.addEventListener("change", shareYourGoal);
