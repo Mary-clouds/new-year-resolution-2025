@@ -22,9 +22,57 @@
     line-height: 1.5;
 }
 .goal-link{
-    transition: 1s;
+    transition: transform 0.5 ease-in-out;
 }
 .goal-link:hover{
     background-color: blueviolet;
     cursor: pointer;
+}
+.carousel-container{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel{
+    display: flex;
+    transition: transform 0.5 ease;
+}
+.quote{
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+.quote-text{
+    font-style: italic;
+    font-style: 1.5em;
+    margin: 0;
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+.prev{
+    left: 10px;
+    transform: translateY(-50%);
+}
+.next{
+    right: 10px;
+    transform: translateY(-50%);
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
 }
