@@ -1,6 +1,5 @@
 .header{
-    background-image: url('');
-    background-size: cover;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240719/pngtree-sunset-sky-with-dramatic-sunset-clouds-over-the-sea-beautiful-sunrise-image_15895100.jpg');
     background-position: center;
     color: white;
     text-align: center;
@@ -10,4 +9,22 @@
     font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+.subheading-title{
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.subheading-text{
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+.goal-link{
+    transition: 1s;
+}
+.goal-link:hover{
+    background-color: blueviolet;
+    cursor: pointer;
 }
