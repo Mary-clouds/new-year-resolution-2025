@@ -1,0 +1,13 @@
+.header{
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px o;
+}
+.header-message{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
