@@ -1,9 +1,9 @@
 .header{
-    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240719/pngtree-sunset-sky-with-dramatic-sunset-clouds-over-the-sea-beautiful-sunrise-image_15895100.jpg');
+    
     background-position: center;
-    color: white;
+    
     text-align: center;
-    padding: 100px o;
+    padding: 100px 0;
 }
 .header-message{
     font-size: 3em;
@@ -15,7 +15,6 @@
     font-size: 2em;
     font-weight: bold;
     color: #333;
-    background-color: #666;;
     margin-bottom: 10px;
 }
 .subheading-text{
@@ -23,8 +22,18 @@
     color: #666;
     line-height: 1.5;
 }
+section{
+    background-color: #f4f4f4;
+   text-align: center;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}   
+
 .goal-link{
-    transition: transform 0.5 ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .goal-link:hover{
     background-color: blueviolet;
@@ -32,27 +41,28 @@
 }
 .carousel-container{
     position: relative;
+    overflow: hidden;
     max-width: 600px;
     margin: 0 auto;
     overflow: hidden;
 }
-.carousel{
+.carousel-quotes{
     display: flex;
-    transition: transform 0.5 ease;
+    transition: transform 0.5s ease-in-out;
 }
 .quote{
     min-width: 100%;
     box-sizing: border-box;
     text-align: center;
     padding: 20px;
-    background-color: black;
+    background-color: #fff;
     border-radius: 10px;
     font-size: 1.2em;
     color: #333;
 }
 .quote-text{
     font-style: italic;
-    font-style: 1.5em;
+    font-size: 1.5em;
     margin: 0;
 }
 .prev, .next{
