@@ -13,28 +13,47 @@ hr{
 /*header*/
 .container{
     display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    margin-top: 20px;
     align-items: center;
-}
-.image-wrapper{
-    border-radius: 90px 90px 0 0;
+    justify-content: center;
     overflow: hidden;
-    width: 400px;
-    height: 500px;
-    position: relative;
+
 }
-.image-wrap img{
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-top: 16px;
+    
+   
+}
+.message-wrapper{
+   margin-top: 10px;
+   padding-top: 15px;
+   
+
+}
+.subheading-text{
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-top: 108px;
     
 }
-.welcome-text{
-    margin-left: 20px;
-    font-size: 16px;
+.image-of-women-flower{
+    max-width: 40%;
+    margin-right: 6px;
+    margin-bottom: 15px; 
+    border-radius: 200px 200px 0 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+.welcome-text{
+    
+    padding-bottom:10px ;
+}
+
 /*bouncing letters*/
 
 @keyframes waveAnimation{
@@ -47,6 +66,7 @@ hr{
 }
 span[role="bouncing-number"]{
     font-family: Georgia, serif;
+    color: orangered ;
     position: relative;
     display: inline-block;
     letter-spacing: 8px;
@@ -209,12 +229,12 @@ div[role="progressbar"]::after{
     }
 /* buttons*/
 button{
-    background: linear-gradient(145deg, #6e7c91, #c6d5e4);
+    
+     background: darkorange;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -224,7 +244,24 @@ button{
 button:hover{
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: orangered;
+    cursor: pointer;
+
 }
+.dark-theme-button{
+     position: relative;
+     top: 20px;
+     left: 50%;
+    
+
+}
+
+.welcome-button{
+  position: relative;
+  top: 18px;
+  left: 15%;
+}
+
 /* Dark theme */
 .dark-theme{
     background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%); ;
@@ -241,19 +278,16 @@ button:hover{
       color: #666;
      
     }
-  .dark-theme-button{
-      display: block;
-      margin-bottom: 10px; 
-      padding-bottom: 5px ;
-      background: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%); ;
-      color: black;
-      font-size: 15px;
-      border-radius: 5px;
+  .dark-theme button{
+    background: linear-gradient(145deg, #6e7c91, #c6d5e4);
+
   }
-  .dark-theme-button:hover{
-      background-color: black;
-      color: white;
-      cursor: pointer;
+  .dark-theme button:hover{
+    color: orangered;
+  }
+  .dark-theme .dark-theme-button{
+    padding-bottom: 10px;
+    margin-bottom: 12px;
   }
   .dark-theme .goal-progress{
       color: #000;
@@ -279,6 +313,10 @@ footer a:hover{
     text-decoration: underline;
     color: orangered;
    
+}
+/*scroll behavior*/
+html{
+    scroll-behavior: smooth;
 }
 
       
