@@ -1,7 +1,8 @@
 /**modif a faire:  7. responsive*/
 
 body{
-    
+    box-sizing: border-box;
+    overflow:hidden ;
     color: orange;
     background: wheat;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,7 +12,7 @@ hr{
     color: orangered;
 }
 /*header*/
-.container{
+.container-sm{
     display: flex;
     gap: 30px;
     padding-top: 35px;
@@ -111,7 +112,7 @@ section{
 }
 
 /*Goal description Section */
-.main-section{
+.main-section-sm{
     display:flex;
     gap: 30px;
     justify-content: center;
@@ -243,8 +244,7 @@ div[role="progressbar"]::after{
     }
 /* buttons*/
 button{
-    
-     background: darkorange;
+    background: darkorange;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -330,10 +330,51 @@ footer a:hover{
 }
 /*scroll behavior*/
 html{
+    height: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;/*ensure the page dont scroll left right!*/
 }
+/* responsiveness with media querries*/
+@media (max-width: 768px){
+ /*Hide the image (already done with Bootstrap utilities classes in html file)*/
+ /*reduce title size*/
+ .responsive-title, h3{
+    font-size: 1.5rem;
+ }
+ /*center text for small screens*/   
+ .welcome-text, .description{
+    text-align: center;
+ }
+ .subheading-text, .description{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-left: 8px;
+    padding-left: 9px;
+ }
 
+ section{
+    position: relative;
+    top: 10px;
+    left: 10px;
+  
+ }
+ button{
+    position: relative;
+    top: 10px;
+    left: 10%;
+ }
+.progress-container{
+    flex-direction:column ;
+    gap: 20px;
+    padding: 16px;
+    margin: 0 auto;
+}
+footer{
+    font-size: 0.8rem;
+    padding: 16px;
+    margin-top: 10px; 
+}
+}
       
   
   
