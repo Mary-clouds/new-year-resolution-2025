@@ -1,7 +1,7 @@
-/**modif a faire: 1.les image forme similaire, 2.ajuster les largeurs, 3. revoir les couleur du background et progress bar.
- 4.les boutons, 5.le dark mode, 6. 2025 sur la meme ligne, 6. le size des textes, 7. responsive*/
+/**modif a faire:  7. responsive*/
 
 body{
+    
     color: orange;
     background: wheat;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -107,6 +107,7 @@ section{
     position: relative;
     top: 20px;
     left: 25%;
+    padding-bottom: 25px;
 }
 
 /*Goal description Section */
@@ -114,27 +115,29 @@ section{
     display:flex;
     gap: 30px;
     justify-content: center;
-    padding-top: 25px;
-    margin-top: 50px;
+    padding-top: 30px;
+    margin: 60px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     background:white;
     align-items: center;
     justify-content: space-between;
+   
 }
 .goal-description{
-    max-width: 60%;
+    max-width: 80%;
 }
 .title{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 15px; 
+    margin-left: 20px;
 
 }
 .description{
     font-size: 1em;
     line-height: 1.6;
-    margin-left: 18px;
+    margin-left: 28px;
     
 }
 .womangoal{
@@ -167,6 +170,7 @@ form{
     align-items: center;
     background-color:white;
     padding: 20px;
+    margin: 60px;
     margin-bottom: 5px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -327,6 +331,7 @@ footer a:hover{
 /*scroll behavior*/
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;/*ensure the page dont scroll left right!*/
 }
 
       
