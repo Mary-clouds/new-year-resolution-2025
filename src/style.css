@@ -1,4 +1,4 @@
-/**modif a faire:  7. responsive*/
+/**modif a faire:  7. responsive ca gate le reste donc voir coe dimunuer media querry. et revoir les button*/
 
 body{
     box-sizing: border-box;
@@ -6,6 +6,9 @@ body{
     color: orange;
     background: wheat;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    max-width: 400rem;
 }
 hr{
     opacity: 2rem;
@@ -284,10 +287,7 @@ button:hover{
     .dark-theme a{
       color:orangered;
     }
-    .dark-theme .container{
-      background: #01005e; 
-      color: white;
-    }
+
     .dark-theme footer{
       color: #666;
      
@@ -309,12 +309,21 @@ button:hover{
   .dark-theme .subheading-title{
       color: white;
   }
-
+  .dark-theme .container-sm{
+    background: #01005e; 
+    color: white;
+  }
+  .dark-theme form{
+    background: #01005e;
+    padding: 40px;
+    
+  }
   /*Footer*/
 footer{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin-top: 40px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #999;
     background: white;
 }
@@ -328,6 +337,14 @@ footer a:hover{
     color: orangered;
    
 }
+.insta-logo{
+    width: 20px;
+}
+.insta-logo:hover{
+    
+    width: 30px;
+    cursor: pointer;
+}
 /*scroll behavior*/
 html{
     height: 100%;
@@ -335,7 +352,7 @@ html{
     overflow-x: hidden;/*ensure the page dont scroll left right!*/
 }
 /* responsiveness with media querries*/
-@media (max-width: 768px){
+@media (max-width: 600px){
  /*Hide the image (already done with Bootstrap utilities classes in html file)*/
  /*reduce title size*/
  .responsive-title, h3{
@@ -358,11 +375,7 @@ html{
     left: 10px;
   
  }
- button{
-    position: relative;
-    top: 10px;
-    left: 10%;
- }
+
 .progress-container{
     flex-direction:column ;
     gap: 20px;
