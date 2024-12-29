@@ -9,6 +9,7 @@ body{
 }
 .container{
     max-width: 400rem;
+    box-sizing: border-box;
 }
 hr{
     opacity: 2rem;
@@ -340,8 +341,7 @@ footer a:hover{
 .insta-logo{
     width: 20px;
 }
-.insta-logo:hover{
-    
+.insta-logo:hover{ 
     width: 30px;
     cursor: pointer;
 }
@@ -352,40 +352,40 @@ html{
     overflow-x: hidden;/*ensure the page dont scroll left right!*/
 }
 /* responsiveness with media querries*/
-@media (max-width: 600px){
+@media (max-width: 800px){
  /*Hide the image (already done with Bootstrap utilities classes in html file)*/
+ 
  /*reduce title size*/
- .responsive-title, h3{
+ .welcome-text,  h3{
     font-size: 1.5rem;
- }
- /*center text for small screens*/   
- .welcome-text, .description{
     text-align: center;
  }
+ /*center text for small screens*/   
  .subheading-text, .description{
     font-size: 0.9rem;
     line-height: 1.4;
-    margin-left: 8px;
-    padding-left: 9px;
- }
-
- section{
-    position: relative;
-    top: 10px;
-    left: 10px;
-  
+    text-align: justify;
  }
 
 .progress-container{
-    flex-direction:column ;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     padding: 16px;
     margin: 0 auto;
+    align-items: center;
+    overflow: visible; /*to prevent elements from being cut off*/
 }
+/*remove the carousel*/
+section{
+display: none;
+}
+
 footer{
     font-size: 0.8rem;
     padding: 16px;
     margin-top: 10px; 
+    text-align: center;
 }
 }
       
