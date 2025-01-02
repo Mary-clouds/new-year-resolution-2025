@@ -12,7 +12,7 @@ body{
     box-sizing: border-box;
 }
 hr{
-    opacity: 2rem;
+    opacity: 3rem;
     color: orangered;
 }
 /*header*/
@@ -85,7 +85,7 @@ span[role="bouncing-number"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
+    max-width: 700px;
     overflow: hidden;  
 }
 .quote-text{
@@ -113,6 +113,7 @@ section{
     top: 20px;
     left: 25%;
     padding-bottom: 25px;
+    
 }
 
 /*Goal description Section */
@@ -247,7 +248,7 @@ div[role="progressbar"]::after{
         color: chartreuse;
     }
 /* buttons*/
-button{
+.theme-button, .welcome-button{
     background: darkorange;
     color: white;
     border: none;
@@ -256,10 +257,7 @@ button{
     font-size: 16px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-button{
-    transition: all 150ms ease-in-out;
-}
-button:hover{
+.theme-button, .welcome-button:hover{
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     background: orangered;
@@ -270,8 +268,6 @@ button:hover{
      position: relative;
      top: 14px;
      left: 50%;
-    
-
 }
 
 .welcome-button{
@@ -279,7 +275,16 @@ button:hover{
   top: 18px;
   left: 15%;
 }
+.carousel-control-next,.carousel-control-prev {
+    transition: all 150ms ease-in-out;
+   
+}
 
+.carousel-control-next:hover,.carousel-control-prev:hover {
+   cursor: pointer;
+   background: orangered;
+   
+}
 /* Dark theme */
 .dark-theme{
     background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%); ;
@@ -293,11 +298,12 @@ button:hover{
       color: #666;
      
     }
-  .dark-theme button{
+  .dark-theme .welcome-button, .theme-button{
     background: linear-gradient(145deg, #6e7c91, #c6d5e4);
 
   }
-  .dark-theme button:hover{
+
+  .dark-theme .welcome-button:hover, .theme-button:hover{
     color: orangered;
   }
   .dark-theme .dark-theme-button{
@@ -378,8 +384,12 @@ html{
 }
 /*remove the carousel*/
 section{
-display: none;
-}
+   padding: 10px;
+   display: flex;
+   justify-content: left;
+   max-width: 500px;
+   overflow: hidden;
+    }
 
 footer{
     font-size: 0.8rem;
